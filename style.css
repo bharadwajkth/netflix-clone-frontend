@@ -1,0 +1,482 @@
+:root {
+  --logo-color: red;
+  --font-color: white;
+  --sign-in-btn: red;
+  --font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  font-family: var(--font-family);
+}
+
+.main {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/f272782d-cf96-4988-a675-6db2afd165e0/web/IN-en-20241008-TRIFECTA-perspective_b28b640f-cee0-426b-ac3a-7c000d3b41b7_large.jpg");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+}
+
+.main .box {
+  height: 80vh;
+  width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  max-width: 60vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  flex-wrap: wrap;
+}
+
+nav img {
+  width: 150px;
+  position: relative;
+  z-index: 10;
+}
+
+nav select {
+  position: relative;
+  z-index: 10;
+  min-width: auto;
+  font-size: 15px;
+}
+
+nav select option{
+  background-color: white;
+  color: black;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--font-color);
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.hero > :first-child {
+  font-weight: 900;
+  font-size: 58px;
+  width: 35%;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.button-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.lang-btn {
+  padding: 0px 20px 0px 31px ;
+  font-weight: 100;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 13px 30px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+
+.main input {
+  padding: 13px 101px 13px 14px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(246, 238, 238, 0.3);
+  background-color: rgba(23, 23, 23, 0.7);
+}
+
+.main input::placeholder {
+  text-align: left;
+  font-size: 15px;
+  color: white;
+  opacity: 0.6;
+  caret-color: white;
+}
+
+input,
+select,
+textarea {
+  color: white;
+}
+
+
+.separation-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(33, 13, 22, 1) 16%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgba(33, 13, 22, 1) 84%
+  );
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+
+.trending-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.trend-heading {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.faq{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 65%;
+  margin: auto;
+  background-color: black;
+  padding: 34px;
+  gap: 15px;
+}
+
+.faq h2 {
+  text-align: left;
+  font-size: xx-large;
+  color: white
+}
+
+
+.covering-layer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  background-color: black;
+  gap: 8px;
+  border: none;
+}
+
+.faqbox{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: #313131 ;
+  align-items: center;
+  font-size: 24px;
+  transition: all 1s ease-out;
+}
+
+.covering-layer > :nth-child(7) {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.main input {
+  padding: 13px 101px 13px 14px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(246, 238, 238, 0.3);
+  background-color: rgba(23, 23, 23, 0.7);
+}
+
+.main input::placeholder {
+  text-align: left;
+  font-size: 15px;
+  color: white;
+  opacity: 0.6;
+  caret-color: white;
+}
+
+input,
+select,
+textarea {
+  color: white;
+}
+
+
+svg{
+  font-size: 24px;
+}
+
+button {
+  color: white;
+}
+
+button:hover{
+  background-color: #464545;
+  cursor: pointer;
+}
+
+.trending-now select{
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  font-weight: 800;
+}
+
+.movie-posters{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  height: 100%;
+  width: 70%;
+}
+
+.movie-posters a {
+  display: block;
+  width: 200px; /* Adjust width for consistency */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-posters img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-posters a:hover img {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7); /* Add shadow on hover */
+}
+
+
+footer {
+  background-color: black;
+  color: #757575;
+  padding: 40px 20px;
+}
+
+footer .questions {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;  /* Left-aligned */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.footer-item a {
+  color: #757575;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-item a:hover {
+  color: #e5e5e5;
+}
+
+
+/* Mobile first approach */
+@media (max-width: 768px) {
+  /* Adjust the hero section */
+  .hero > :first-child {
+    font-size: 32px;
+    width: 90%;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 18px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 14px;
+  }
+
+  .main input {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .btn-red {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  /* Navigation */
+  nav {
+    max-width: 90vw;
+    height: auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  .trend-heading {
+    font-size: 30px;
+  }
+
+  .container2 {
+    max-width: 90%;
+  }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero > :first-child {
+    font-size: 48px;
+    width: 70%;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 20px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 16px;
+  }
+
+  nav {
+    max-width: 80vw;
+  }
+
+  .trend-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trend-heading {
+    font-size: 1.5rem;
+  }
+
+  .movie-posters {
+    gap: 15px;
+  }
+
+  .movie-posters a {
+    width: 150px; /* Adjust size for smaller screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .trend-heading {
+    font-size: 1.8rem;
+  }
+
+  .movie-posters a {
+    width: 180px;
+  }
+
+  footer {
+    max-width: 90vw;
+    padding: 75px 0;
+  }
+
+  .footer-item{
+    align-items: center;
+  }
+}
+
+
+
