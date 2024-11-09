@@ -57,7 +57,7 @@ nav select {
   font-size: 15px;
 }
 
-nav select option{
+nav select option {
   background-color: white;
   color: black;
 }
@@ -123,7 +123,7 @@ nav button {
 }
 
 .lang-btn {
-  padding: 0px 20px 0px 31px ;
+  padding: 0px 20px 0px 31px;
   font-weight: 100;
   border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 14;
@@ -145,7 +145,6 @@ nav button {
   border-radius: 5px;
   border: none;
 }
-
 
 .main input {
   padding: 13px 101px 13px 14px;
@@ -169,7 +168,6 @@ textarea {
   color: white;
 }
 
-
 .separation-gradient {
   background: linear-gradient(
     to right,
@@ -188,7 +186,6 @@ textarea {
   z-index: -1;
   border-radius: inherit;
 }
-
 
 .trending-now {
   display: flex;
@@ -214,8 +211,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-
-.faq{
+.faq {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -229,9 +225,8 @@ textarea {
 .faq h2 {
   text-align: left;
   font-size: xx-large;
-  color: white
+  color: white;
 }
-
 
 .covering-layer {
   display: flex;
@@ -244,11 +239,11 @@ textarea {
   border: none;
 }
 
-.faqbox{
+.faqbox {
   display: flex;
   justify-content: space-between;
   padding: 24px;
-  background-color: #313131 ;
+  background-color: #313131;
   align-items: center;
   font-size: 24px;
   transition: all 1s ease-out;
@@ -284,8 +279,7 @@ textarea {
   color: white;
 }
 
-
-svg{
+svg {
   font-size: 24px;
 }
 
@@ -293,12 +287,12 @@ button {
   color: white;
 }
 
-button:hover{
+button:hover {
   background-color: #464545;
   cursor: pointer;
 }
 
-.trending-now select{
+.trending-now select {
   color: white;
   font-size: 30px;
   position: absolute;
@@ -307,7 +301,7 @@ button:hover{
   font-weight: 800;
 }
 
-.movie-posters{
+.movie-posters {
   display: flex;
   justify-content: space-around;
   gap: 10px;
@@ -332,7 +326,6 @@ button:hover{
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7); /* Add shadow on hover */
 }
 
-
 footer {
   background-color: black;
   color: #757575;
@@ -343,7 +336,7 @@ footer .questions {
   font-size: 1.2rem;
   margin-bottom: 20px;
   color: white;
-  text-align: center;  /* Left-aligned */
+  text-align: center; /* Left-aligned */
 }
 
 .footer {
@@ -372,7 +365,6 @@ footer .questions {
 .footer-item a:hover {
   color: #e5e5e5;
 }
-
 
 /* Mobile first approach */
 @media (max-width: 768px) {
@@ -473,10 +465,7 @@ footer .questions {
     padding: 75px 0;
   }
 
-  .footer-item{
+  .footer-item {
     align-items: center;
   }
 }
-
-
-
